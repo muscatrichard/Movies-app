@@ -1,0 +1,37 @@
+@import '../../../main';
+
+div {
+  cursor: pointer;
+}
+
+li {
+  display: block;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li a {
+  display: flex;
+  line-height: 1.6;
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  color: lighten($primary, 10%);
+  background-color: $neutral;
+
+}
+
+li a:hover {
+  background-color: darken($neutral-darker, 30%);
+  color: $neutral;
+}
+
+div ul {
+  display: none;
+}
+
+div:hover > ul {
+  display: block;
+  position: absolute;
+  color: $neutral;
+}
+

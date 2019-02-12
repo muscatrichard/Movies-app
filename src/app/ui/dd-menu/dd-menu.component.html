@@ -1,0 +1,5 @@
+<div>{{displayValue}} <i class="fas fa-caret-down"></i>
+  <ul>
+    <li *ngFor='let option of options'><a (click)=selectedValue.emit(option.value)>{{option.key}}</a></li>
+  </ul>
+</div>

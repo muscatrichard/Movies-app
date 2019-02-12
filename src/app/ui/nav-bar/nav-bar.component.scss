@@ -1,0 +1,44 @@
+@import '../../../main';
+
+div.nav-bar{
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  background: $primary;
+  color: white;
+  div{
+    width: 30vw;
+  }
+}
+
+
+
+div.nav-links{
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    li {
+      list-style-type: none;
+      padding: 10px;
+      &.active{
+        color: $accent;
+      }
+      a{
+           color: inherit;
+           cursor: pointer;
+           text-decoration: none;
+      }
+    }
+  }
+}

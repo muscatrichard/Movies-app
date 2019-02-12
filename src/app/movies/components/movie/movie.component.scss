@@ -1,0 +1,96 @@
+@import '../../../../main';
+
+div.movie-detail {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div.cover {
+    margin: auto;
+    height: 50vh;
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      box-shadow: $neutral-darker 5px 5px 10px;
+    }
+  }
+
+  div.info {
+    margin: 20px;
+    p.movie-name {
+      font-size: 40px;
+    }
+    p {
+      margin-bottom: 10px;
+      span {
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+    p.genres {
+      span {
+        color: lighten($primary, 40%);
+        font-weight: 600;
+      }
+    }
+  }
+
+}
+
+div.movie-preview {
+  cursor: pointer;
+  padding: 10px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div.cover{
+    width: 160px;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: $neutral-darker 5px 5px 10px;
+    }
+  }
+
+  div.info{
+    margin-top: 10px;
+    p.movie-name{
+      font-size: 15px;
+      //word-wrap: break-word;
+      overflow-x: hidden;
+    }
+    p.genres {
+      span {
+        font-size: 12px;
+        color: lighten($primary, 40%);
+        font-weight: 600;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-xs) {
+  div.movie-detail {
+    div.cover {
+      height: 60vh;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-sm) {
+  div.movie-detail {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    div.cover {
+      height: 400px;
+      margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div [ngClass]="{'movie-detail': isDetail === true, 'movie-preview': isDetail === false}">
+  <div class='cover'>
+    <img src='./assets/movie-covers/{{movie?.img}}'>
+  </div>
+  <div class='info'>
+    <p class='movie-name'>{{movie?.name}}</p>
+    <p *ngIf="isDetail"><span>Length: </span>{{movie?.length}}</p>
+    <p class='genres'><span *ngFor='let genre of movie?.genres'>{{genre}}</span></p>
+    <p><span>Rating: </span>{{movie?.rate}}</p>
+    <p class='top-spacing'*ngIf="isDetail">{{movie?.description}}</p>
+  </div>
+</div>

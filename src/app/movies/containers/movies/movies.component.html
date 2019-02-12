@@ -1,0 +1,10 @@
+<h2>Movies</h2>
+<app-content>
+  <div class='query'>
+    <p>Genre: </p>
+    <app-dd-menu [options]="options" [value]="filter$ | async" (selectedValue)="filter($event)"></app-dd-menu>
+  </div>
+</app-content>
+
+<app-movie-list [movieList]="movies$ | async"></app-movie-list>
+

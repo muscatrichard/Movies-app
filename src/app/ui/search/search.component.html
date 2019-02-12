@@ -1,0 +1,4 @@
+<div class='search-control'>
+  <input type="text" placeholder="Search" [value]="query" (keyup)="search.emit($event.target.value)"/>
+  <span><i class="fas fa-search"></i></span>
+</div>

@@ -1,0 +1,19 @@
+div.search-control{
+  background-color: white;
+  align-items: center;
+  display: inline-flex;
+  //flex: 1 1 300px;
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  //width:400px;
+  height: 28px;
+  input{
+    border: 0;
+    padding: 0.5rem;
+    flex: 1;
+  }
+  span{
+    padding: 0.5rem;
+  }
+}

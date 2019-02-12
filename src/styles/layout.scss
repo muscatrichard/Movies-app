@@ -1,0 +1,25 @@
+@import './theme.scss';
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+*{
+  padding:0;
+  margin:0;
+  outline: none;
+}
+
+body{
+  background-color: $neutral-darker;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat:100,100i,200,200i,300,300i,400 400i"', sans-serif;
+  font-weight: 300;
+  h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
