@@ -1,7 +1,7 @@
 <h2>Search</h2>
 <app-content>
   <div class='query'>
-    <app-search [query]="query$ | async" [error]="error$ | async" (search)="search($event)"></app-search>
+    <app-search [query]='query$ | async' [error]='error$ | async' (search)='search($event)'></app-search>
   </div>
 </app-content>
-<app-movie-list [movieList]="movies$ | async"></app-movie-list>
+<app-movie-list [movieList]='movies$ | async'></app-movie-list>
