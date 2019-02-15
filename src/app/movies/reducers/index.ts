@@ -83,11 +83,6 @@ export const getFilterError = createSelector(
   fromFilter.getError
 );
 
-
-/**
- * Some selector functions create joins across parts of state. This selector
- * composes the search result IDs to return an array of books in the store.
- */
 export const getSearchResults = createSelector(
   getMovieEntitiesState,
   getSearchMovieIds,
